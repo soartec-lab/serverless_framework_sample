@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  serverless:
+    container_name: serverless
+    build:
+      context: .
+    volumes:
+      - ./:/serverless
+    working_dir: /serverless
+    tty: true
+
