@@ -5,7 +5,19 @@ Consideration of development sample and file structure with `serverless framewor
 
 ```
 $ docker-comopse build
-$ docker-compose up
+$ docker-compose up -d
+$ docker-compose exec serverless bash
+$ yarn sls invoke local -f hello
+yarn run v1.22.5
+warning package.json: No license field
+/serverless/node_modules/.bin/sls invoke local -f hello
+
+{
+    "statusCode": 200,
+    "body": "{\"message\": \"Go Serverless v1.0! Your function executed successfully!\", \"input\": {}}"
+}
+
+Done in 20.00s.
 ```
 
 # Enviroments
